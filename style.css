@@ -1,0 +1,169 @@
+
+:root{
+    --menuBackground: #FAF9F6;
+    --menuButtons: rgb(240, 135, 14);
+    --mainFont: 'Lato', sans-serif;
+
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightblue;
+    
+
+}
+
+button{
+    background-color: var(--menuButtons);
+    justify-content: center;
+    font-family: var(--mainFont);
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.welcome{
+    background-color: var(--menuBackground);
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: var(--mainFont);
+    font-size: 15px;
+}
+
+.world{
+    overflow: hidden;
+    position: fixed;
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+
+/* trying to make a scrolling background, but it's not working at the moment */
+/* .background{
+    animation: scroll 3s linear infinite;
+} */
+
+.score {
+    position: absolute;
+    font-size: 3vmin;
+    right: 50px;
+    top: 100px;
+    font-size: 40px;
+    background-color: white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-family: var(--mainFont);
+}
+
+.start-screen{
+    position: absolute;
+    font-size: 5 vmin;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flexbox;
+
+}
+
+.hide{
+    display:none
+}
+
+
+.character{
+    --bottom: 15;
+    position: absolute;
+    left: 15%;
+    height: auto;
+    bottom: 120px;
+    
+}
+
+.jump{
+    animation: jump 0.5s linear;
+}
+
+
+.enemy{
+    width: 60px;
+    height: 80px; 
+    position: absolute;
+    bottom: 100px;
+    left: 580px;
+
+} 
+
+.enemymoving{
+    width: 60px;
+    height: 80px; 
+    position: absolute;
+    bottom: 100px;
+    left: 580px;
+    background-image: url(images/dog.png);
+    background-size: 60px 80px;
+}
+
+.enemyeasy{
+    animation: obstacle 3.5s infinite;
+}
+
+.enemymedium{
+    animation: obstacle 2.5s infinite;
+}
+
+.enemyhard{
+    animation: obstacle 2s infinite;
+}
+
+
+/* character jump animation */
+@keyframes jump {
+    0% {
+        bottom: 130px;   
+    }
+
+    25% {
+        bottom: 180px;
+    }  
+
+    50% {
+        bottom: 230px;
+    }
+
+    75% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 130px;
+    }
+}
+
+/* dog movinganimation */
+
+@keyframes obstacle {
+    0% {
+        left: 800px;
+    }
+
+    100% {
+        left: 0px
+    }
+}
+
+/* background animation */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100);
+    }
+}
+

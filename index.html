@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avoid the dog!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+    <div class="world">
+        
+        <div><img src="images/background.jpg" class="background scrolling-background" id="img">
+        <img src="images/character.png" class="character"></div>
+        <div class="enemy"></div>
+        <div class="score">Score: 0</div>
+    </div>
+
+    <div class="start-screen">
+        <div class="welcome">
+            <div>Please help me avoid the neighbours' dog, he's way too friendly and keeps coming over!</div>
+            <div>Select a difficulty level to start helping me.</div>
+        </div>
+        
+        <button class="restart-button hide">Retry</button>
+
+        <div class="buttons">
+            <button type="button" class="easy">Easy</button> 
+            <button type="button" class="medium">Medium</button>
+            <button type="button" class="hard">Hard</button>
+        </div>
+    </div>
+    <!-- <img src="images/background.jpg" class="background"> -->
+    <audio id="background-music" src="audio/backgroundmusic.mp3" loop></audio>
+    <audio id="jumping-sound" src="audio/jumping.mp3"></audio>
+    <audio id="game-over" src="audio/gameover.mp3"></audio>
+
+
+    <script src="app.js"></script>
+</body>
+</html

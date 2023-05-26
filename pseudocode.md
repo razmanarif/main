@@ -1,0 +1,1 @@
+1. set variables: character, obstacle, 

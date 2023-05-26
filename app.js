@@ -127,7 +127,7 @@ let isAlive = setInterval(() => {
   );
 
 
-  // assign character Y position to constants
+  // assign character X position to constants
   const characterRight = 150;
   const characterLeft = 100;
 
@@ -164,17 +164,7 @@ const restartButton = document.querySelector(".restart-button");
 
 // Function to restart the game 
 function restartGame() {
-  // totalScore = 0;
-  // collision = "";
-  // score.innerText = `Score: ${totalScore}`;
-  // character.style.bottom = "120";
-  // enemy.style.left = "800px";
-  // restartButton.classList.add("hide");
-  // welcomeText.classList.remove("hide");
-  // background.setAttribute("src", "images/background.jpg");
-  // // restart the game again
-  // startScoreCounter();
-  // playMusic();
+
   location.reload();
 }
 

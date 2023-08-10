@@ -4,8 +4,6 @@ This game was made using HTML, CSS, and JavaScript. Players take control of a ca
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
 Ensure that your IDE is able to open an HTML file on live server. Try using the Live Server extension if you are on VS code.

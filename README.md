@@ -1,6 +1,6 @@
 # Avoid the dog
 
-This game was built to practice HTML, CSS, and JavaScript. Players take control of a cat who has to avoid the neghbours' dog who keeps coming at him. 
+This game was made using HTML, CSS, and JavaScript. Players take control of a cat who has to avoid the neghbours' dog who keeps coming at him. The game had three difficulty levels and ends once the dog collides with the cat.
 
 ## Getting Started
 
